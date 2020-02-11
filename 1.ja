@@ -1,0 +1,34 @@
+port Java.util.Scanner;
+class Calculator
+{
+public static void main(String[] args)
+ {
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter two digits separated only with spaces");
+double a = sc.nextDouble();
+double b = sc.nextDouble();
+String oper = sc.nextLine();
+
+ if(oper.equals(" add"))
+  {
+    System.out.println("result= "+(a+b));
+  }
+ else if(oper.equals(" sub"))
+  {
+    System.out.println("result= "+(a-b));
+  }
+ else if(oper.equals(" mul"))
+  {
+    System.out.println("result= "+(a*b));
+  }
+ else if(oper.equals(" div"))
+  {
+    System.out.println("result= "+(a/b));
+  }
+ else
+  {
+    System.out.println("invaild input");
+  }
+ }
+}
+
